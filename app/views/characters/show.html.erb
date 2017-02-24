@@ -1,6 +1,6 @@
 <div class="flex-space">
   <p><span>&#8606; </span><%= link_to "Back", house_path(@house) %></p>
-  <p><%= link_to "Edit", edit_house_character_path(@house) %><span> +</span></p>
+  <p><%= link_to "Edit", edit_house_character_path(@house,@character) %><span> | </span><%= link_to "Delete", house_character_path(@house,@character), method: :delete %></p>
 </div>
 
 <h1><%= @character.name %></h1>
