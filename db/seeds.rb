@@ -10,10 +10,10 @@ House.destroy_all
 Character.destroy_all
 
 stark = House.create(name: "House Stark", img_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest?cb=20170101103142", words: "Winter is Coming")
-watch = House.create(name: "Night's Watch", img_url: "http://gameofthrones.wikia.com/wiki/File:Night%27s-Watch-Main-Shield.PNG", words: "Sword in the Darkness")
+watch = House.create(name: "Night's Watch", img_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/e/ed/Night%27s-Watch-Main-Shield.PNG/revision/latest?cb=20161231113156", words: "Sword in the Darkness")
 targaryen = House.create(name: "House Targaryen", img_url: "http://vignette2.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest?cb=20161206005534", words: "Fire and Blood")
-lannister = House.create(name: "House Lannister", img_url: "http://gameofthrones.wikia.com/wiki/File:House-Lannister-Main-Shield.PNG", words: "Hear me Roar")
-baratheon = House.create(name: "House Baratheon", img_url: "http://gameofthrones.wikia.com/wiki/File:House-Baratheon-Main-Shield.PNG", words: "Ours is the Fury")
+lannister = House.create(name: "House Lannister", img_url: "http://vignette3.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest?cb=20170101095357", words: "Hear me Roar")
+baratheon = House.create(name: "House Baratheon", img_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/0/00/House-Baratheon-Main-Shield.PNG/revision/latest?cb=20161206005433", words: "Ours is the Fury")
 
 Character.create(name: "Lady Catelyn", photo_url: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/04/04/22/5678507.jpg", house_id: stark.id)
 Character.create(name: "Eddard Stark", photo_url: "https://pbs.twimg.com/profile_images/533002540078477312/98X7lsxK.jpeg", house_id: stark.id)

@@ -1,0 +1,10 @@
+<h2><%= @house.name %></h2>
+
+<div class="flex">
+  <% @characters.each do |character| %>
+    <div class="container">
+      <p><%= character.name %></p>
+      <img class="photo" src="<%= character.photo_url %>">
+    </div>
+  <% end %>
+</div>

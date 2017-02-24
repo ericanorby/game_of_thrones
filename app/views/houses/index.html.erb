@@ -1,0 +1,9 @@
+<div class="flex">
+  <% @houses.each do |house| %>
+    <div class="container">
+      <a href="/houses/<%= house[:id] %>"><%= house.name %></a>
+      <br><br>
+      <img class="sigil" src="<%= house.img_url %>">
+    </div>
+    <% end %>
+</div>
