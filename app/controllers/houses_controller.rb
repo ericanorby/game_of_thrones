@@ -18,6 +18,16 @@ class HousesController < ApplicationController
     redirect_to house_path(@house)
   end
 
+  def edit
+    @house = House.find(params[:id])
+  end
+
+  def update
+    @house = House.find(params[:id])
+    @house.update(house_params)
+    redirect_to house_path(@house)
+  end
+
   private
 
   def house_params

@@ -16,6 +16,8 @@
 
 body {
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 header {
@@ -23,7 +25,7 @@ header {
 }
 
 header img {
-  height: 200px;
+  height: 160px;
 }
 
 div a {
@@ -39,6 +41,22 @@ a:hover {
 span {
   font-size: 24px;
   color: black;
+}
+
+input[type=text] {
+  font-size: 14px;
+  padding: 3px;
+  width: 250px;
+  float: right;
+}
+
+form {
+  width: 350px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 18px;
 }
 
 .sigil {
@@ -63,6 +81,20 @@ span {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
+  margin-bottom: 10px;
+  background: rgb(255,204,1);
+  border-top: 1px solid rgb(223, 179, 3);
+  border-bottom: 1px solid rgb(223, 179, 3);
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  background: rgb(255,204,1);
+  border-top: 1px solid rgb(223, 179, 3);
+  border-bottom: 1px solid rgb(223, 179, 3);
 }
 
 .container {
