@@ -1,4 +1,9 @@
-<h2><%= @house.name %></h2>
+<div class="flex-space">
+  <p><span>&#8606; </span><%= link_to "Back", houses_path %></p>
+  <p><%= link_to "Add Character", new_house_character_path(@house) %><span> +</span></p>
+</div>
+
+<h1><%= @house.name %></h1>
 
 <div class="flex">
   <% @characters.each do |character| %>
@@ -8,5 +13,3 @@
     </div>
   <% end %>
 </div>
-
-<%= link_to "Add Character", new_house_character_path(@house) %>

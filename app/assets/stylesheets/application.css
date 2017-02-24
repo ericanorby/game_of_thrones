@@ -18,6 +18,29 @@ body {
   text-align: center;
 }
 
+header {
+  background: black;
+}
+
+header img {
+  height: 200px;
+}
+
+div a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(98, 59, 181);
+}
+
+a:hover {
+  color: black;
+}
+
+span {
+  font-size: 24px;
+  color: black;
+}
+
 .sigil {
   width: 200px;
 }
@@ -36,6 +59,12 @@ body {
   flex-wrap: wrap;
 }
 
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
 .container {
-  margin: 10px;
+  margin: 15px;
 }

@@ -1,3 +1,8 @@
+<div class="flex-space">
+  <p><span>&#8606; </span><%= link_to "Back", house_path(@house) %></p>
+  <p><%= link_to "Edit", edit_house_character_path(@house) %><span> +</span></p>
+</div>
+
 <h1><%= @character.name %></h1>
 
 <img class="large-photo" src="<%= @character.photo_url %>">
