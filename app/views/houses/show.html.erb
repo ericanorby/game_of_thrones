@@ -3,8 +3,10 @@
 <div class="flex">
   <% @characters.each do |character| %>
     <div class="container">
-      <p><%= character.name %></p>
-      <img class="photo" src="<%= character.photo_url %>">
+      <p><%= link_to character.name, house_character_path(@house, character) %></p>
+      <img class="small-photo" src="<%= character.photo_url %>">
     </div>
   <% end %>
 </div>
+
+<%= link_to "Add Character", new_house_character_path(@house) %>

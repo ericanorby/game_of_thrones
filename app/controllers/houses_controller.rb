@@ -9,4 +9,19 @@ class HousesController < ApplicationController
     @characters = Character.where(house_id: params[:id])
   end
 
+  def new
+    @house = House.new
+  end
+
+  def create
+    @house = House.create(house_params)
+    redirect_to house_path(@house)
+  end
+
+  private
+
+  def house_params
+    params.require(:house).permit(:name, :img_url, :words)
+  end
+
 end

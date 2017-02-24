@@ -22,13 +22,18 @@ body {
   width: 200px;
 }
 
-.photo {
+.small-photo {
   width: 200px;
+}
+
+.large-photo {
+  width: 500px;
 }
 
 .flex {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container {
