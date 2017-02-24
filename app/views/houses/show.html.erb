@@ -12,7 +12,7 @@
   <% @characters.each do |character| %>
     <div class="container">
       <p><%= link_to character.name, house_character_path(@house, character) %></p>
-      <img class="small-photo" src="<%= character.photo_url %>">
+      <div class="preview" style="background-image: url(<%= character.photo_url %>)"></div>
     </div>
   <% end %>
 </div>
